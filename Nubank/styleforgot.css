@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header img{
+    transition: all 1s ease;
+}
+
+header img:hover{
+    transform: rotate(180deg);
+}
+
+
+body{
+    background-color: #81259D;
+    font-family: sans-serif;
+    color: #222;
+    align-items: center;
+    margin: 4vh 5vh;
+    cursor: auto;
+    position: relative;
+}
+
+.resto {
+    text-align: center ;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 31vw;
+    margin-top: -10vh;
+    height: 92.5vh;
+    max-width: 33vw;
+    border-radius: 10px;
+    margin-bottom: -25px;
+    padding: 1rem
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+}
+
+.form .user {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    margin-top: 3.5rem;
+    text-align: start;
+    margin-left: 55px;
+}
+
+.form label {
+    cursor: text;
+    color:rgb(110, 105, 105);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6vh;
+}
+
+.form .user input {
+    margin-bottom: 1vh;
+    padding: 3px;
+    font-size: 18px;
+    height: 0px;
+    outline: none;
+}
+.form .user .underline::before {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 75%;
+    left: 25;
+    background:rgba(0,0,0,0.2);
+}
+.form .user .underline::after {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 75%;
+    left: 30;
+    background:#81259D;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.form  .user input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.form input[type='submit']{
+    margin-top: 3vh;
+    width: 52vh;
+    height: 11vh;
+    border-radius: 5px;
+    border: 1px solid #ccd1d1;
+    background-color: white;
+    color: #ccd1d1;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-bottom: 8vh;
+    margin-top: 15vh;
+    font-weight: 12.5px;
+    margin-left: 50px;
+}
+
+.container h2 {
+    margin: 5vh;
+    font-size: 21px;
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+}
+
+.i {
+    text-align: start;
+    font-size: 40px;
+    color: #ccd1d1;
+}
+
+.i a{
+    text-decoration: none;
+    color: #ccd1d1;
+}

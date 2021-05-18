@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nubank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><img src="assets/white.svg" alt="logo nubank" height="80px"></header>
+    <div class="container">
+        <h2>Faça seu login</h2>
+        <form class="form">
+            <div class="user">
+                <label for="cpf" class='lbluser'>CPF</label>
+                <input type='text' name="cpf" id="cpf" class='iptuser' maxlength="14">
+                <div class="underline"></div>
+            </div>
+            <div class="password">
+                <label for="password" class='lblpassword'>Senha</label>
+                <input type="password" name="password" id="password" class='iptpassword'>
+                <div class="underline"></div>
+            </div>
+            <input type="submit" value="CONTINUAR" class='.btnsubmit' id="btnsubmit">
+        </form>
+        <div class="footer">
+            <div class="esqueci">
+                <a href="forgot.html">Esqueci minha senha ></a>
+            </div>
+            <div class="naocliente">
+                <a href="#">Ainda não sou cliente ></a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header img{
+    transition: all 1s ease;
+}
+
+header img:hover{
+    transform: rotate(180deg);
+}
+
+body{
+    background-color: #81259D;
+    font-family: sans-serif;
+    color: #222;
+    align-items: center;
+    margin: 4vh 5vh;
+    cursor: auto;
+    position: relative;
+}
+
+
+.container{
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 31vw;
+    margin-top: -10vh;
+    height: 92.5vh;
+    max-width: 33vw;
+    border-radius: 10px;
+    margin-bottom: -25px;
+}
+
+.container h2 {
+    margin: 5vh;
+    font-size: 21px;
+    margin-top: 11vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+}
+
+.form .user {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+
+.form .password {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+
+.form label {
+    cursor: text;
+    color:rgb(110, 105, 105);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6vh;
+}
+
+.form .user input {
+    margin-bottom: 1vh;
+    padding: 3px;
+    font-size: 18px;
+    height: 0px;
+}
+
+.form .password input {
+    margin-bottom: 1vh;
+    padding: 3px;
+    font-size: 18px;
+    height: 0px;
+}
+
+.form input[type='submit']{
+    margin-top: 3vh;
+    width: 52vh;
+    height: 11vh;
+    border-radius: 5px;
+    border: 1px solid #ccd1d1;
+    background-color: white;
+    color: #ccd1d1;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-bottom: 8vh;
+    margin-top: 8vh;
+    font-weight: 12.5px;
+}
+
+.form .user .underline::before {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    background:rgba(0,0,0,0.2);
+}
+.form .user .underline::after {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    background:#81259D;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.form  .user input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+
+.form .password .underline::before {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    background:rgba(0,0,0,0.2)
+}
+.form .password .underline::after {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    background:#81259D;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+
+}
+
+
+.form  .password input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+
+.footer a {
+    text-decoration: none;
+    color:#8e5b9e;
+    font-weight: 600;
+    font-size: 14px;
+    transition: ease 0.3s ;
+    margin-bottom: 4vh;
+}
+
+.container input{
+    outline: none;
+}
+
+.footer a:hover{
+    color: black;
+}
+
+.footer div {
+    margin-bottom: 2.5vh;
+}
+
+.footer {
+    margin-bottom: 8vh;
+}
